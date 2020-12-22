@@ -129,6 +129,8 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 	
+  <script src="resources/comm/utils.js"></script>
+	
   <!-- dynamic script -->
   
   <script>
@@ -138,6 +140,7 @@
 	});
 	*/
 	$( "#header" ).load( "view/comm/header.html", function() {
+		$ajax("221.146.202.165")
 	});
 	$( "#section0" ).load( "view/section0.html", function() {
 	});
