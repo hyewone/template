@@ -128,12 +128,24 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/jquery.ajax-cross-origin.min.js"></script>
 	
   <script src="resources/comm/utils.js"></script>
 	
   <!-- dynamic script -->
   
   <script>
+	var apiPath = "http://9722cc03c716.ngrok.io"
+	
+	$("#testBtn").on("click", function(){
+  		//$(this).hide();
+		$ajax( apiPath + "stock/creonRest" , {}, function(result){
+			alert(result);
+		});
+	});
+	  
+	$("#testBtn2").attr("href", "http://d9f6c7e8b410.ngrok.io");
+	  
 	/*
 	$( "#resources" ).load( "view/comm/resources.html", function() {
 		
